@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   root.style.setProperty("--secondary-color", secondaryColor);
   root.style.setProperty("--page-bg-color", pageBgColor);
   root.style.setProperty("--icon-text-color", iconTextColor);
+  root.style.setProperty("--footer-bg-color", footerBgColor);
 
   const swiper = new Swiper(".swiper", {
     spaceBetween: 8,

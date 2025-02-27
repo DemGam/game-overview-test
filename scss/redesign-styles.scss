@@ -4,6 +4,7 @@
   --secondary-color: #979797;
   --page-bg-color: #f6f6f6;
   --icon-text-color: #8b8b8b;
+  --footer-bg-color: #2c2c2c;
 }
 @font-face {
   font-family: "OpenSans";
@@ -936,4 +937,57 @@ a.custom-btn {
     align-items: center;
     gap: 10px;
   }
+}
+
+.vd-footer {
+  background-color: var(--footer-bg-color);
+  color: #fff;
+  padding: 20px 0 10px;
+  font-size: 12px;
+  @media (max-width: 767.98px) {
+    padding-bottom: 20px;
+  }
+  .vd-wrapper {
+    padding-inline: 32px;
+  }
+  a {
+    color: #fff;
+    @media (hover: hover) {
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+  // .vd-footer__logo
+  &__logo {
+    max-width: 180px;
+    display: block;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  // .vd-footer__text
+  &__text {
+    text-align: center;
+  }
+}
+
+// scroll bar
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-color);
 }
